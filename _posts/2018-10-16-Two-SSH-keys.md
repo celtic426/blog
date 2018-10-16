@@ -1,51 +1,91 @@
 ---
 layout: post
 title: "Using Two SSH Keys with Git"
-tags: [code]
+tags: [SSH, GitHub, code]
 ---
 
 I have two GitHub accounts, one that hosts my website on a custom domain and the other which holds my projects. I was able to get SSH working on both accounts with the following steps.
 
-### Generate two pairs of keys
+### Generate the keys
 
-Running the `ssh-keygen` command will allow you to name and save an SSH keypair.
+Running the `ssh-keygen` command will allow you generate an SSH keypair.
 
 1. In terminal, run `ssh-keygen -t rsa -C "youremail@gmail.com"`
-2. The default save location is `/Users/tim/.ssh/id_rsa` but you can give it a name like `/Users/tim/.ssh/id_rsa_main`
+2. Type a location and name for the file, such as `/Users/tim/.ssh/id_rsa_primary`
 3. Leave the passphrase empty and hit Enter
+4. To generate a second keypair, repeat steps 1-3 providing a different name in step 2, such as `/Users/tim/.ssh/id_rsa_secondary`
 
-You now have a public and private key saved in your `~/.ssh folder. Repeat steps 1-3 providing a different name in step 2, such as `id_rsa_secondary`.
+### Copy keys to GitHub
 
+1. Navigate to your SSH directory `cd ~/.ssh`
+2. Run `ls -a` to show the keys you generated
+3. Copy the output of `cat id_rsa_primary.pub`
+4. Paste this public key into a new SSH key in your GitHub settings
+5. Repeat steps 3-4 for your secondary key and second GitHub account
 
+### Create config file
 
+1. Still in your ~/.ssh folder, create a config file: `touch config`
+2. Using the following template, only change 'primary' and 'secondary' with your names
 
-[Minimal Mistakes](https://mmistakes.github.io/minimal-mistakes/markup-syntax-highlighting).
+```
+Host primary.github.com
+	HostName github.com
+	User git
+	IdentityFile ~/.ssh/id_rsa_primary
 
-### GFM Code Blocks
-
-GitHub Flavored Markdown [fenced code blocks](https://help.github.com/articles/creating-and-highlighting-code-blocks/) are supported. To modify styling and highlight colors edit `/_sass/syntax.scss`.
-
-```css
-#container {
-  float: left;
-  margin: 0 -240px 0 0;
-  width: 100%;
-}
+Host secondary.github.com
+	HostName github.com
+	User git
+	IdentityFile ~/.ssh/id_rsa_secondary
 ```
 
-### Code Blocks in Lists
+### Add keys to your system
 
-Indentation matters. Be sure the indent of the code block aligns with the first non-space character after the list item marker (e.g., `1.`). Usually this will mean indenting 3 spaces instead of 4.
+1. (Optional) You can delete all previous cached keys with `ssh-add -D`
+2. To activate the first key on your system `ssh-add ~/.ssh/id_rsa_primary`
+3. Repeat for second account `ssh-add ~/.ssh/id_rsa_secondary`
+4. You can confirm they have been added using `ssh-add -l`
 
-1. Do step 1.
-2. Now do this:
+```
+2048 SHA256:8moy5Zmdc1XDMv64mh1LHG/13zcmbYCPaY9sFwkWuFM /Users/tim/.ssh/id_rsa_primary (RSA)
+2048 SHA256:NOlGpixtyoCK7RyWoVTd7z6k/PFyEaEEeV9YpIij8Sc /Users/tim/.ssh/id_rsa_secondary (RSA)
+```
 
-   ```ruby
-   def print_hi(name)
-     puts "Hi, #{name}"
-   end
-   print_hi('Tom')
-   #=> prints 'Hi, Tom' to STDOUT.
-   ```
+### Test connection
 
-3. Now you can do this.
+Connect to GitHub using your aliases and you should receive a success message.
+
+```
+$ ssh -T git@primary.github.com
+Hi tim! You've successfully authenticated, but GitHub does not provide shell access.
+
+$ ssh -T git@secondary.github.com
+Hi tim! You've successfully authenticated, but GitHub does not provide shell access.
+```
+
+### Edit git config
+
+I still had to make one more change in order to push to my secondary account.
+
+1. Navigate to and open the git config file inside your repo folder `cd project/.git/.config`
+2. Overwrite the 'origin' section with the following.
+
+* `secondary` = the host alias in your ssh config file (my aliases are 'primary' and 'secondary')
+* `username` = your github username associated with this repos
+* `project` = the name of the repo
+
+```
+[remote "origin"]
+	url = git@secondary.github.com:username/project.git
+```
+
+### Conclusion
+
+
+
+### Additional resources
+
+* [YouTube - Mulitple SSH Keys on a Mac](https://www.youtube.com/watch?v=9u4QPEMFK4A)
+* [StackOverflow - Mulitple GitHub Accounts & SSH Config](https://stackoverflow.com/questions/3225862/multiple-github-accounts-ssh-config)
+* [Gist by jexchan](https://gist.github.com/jexchan/2351996)
