@@ -21,19 +21,19 @@ theme_settings:
    Powered by <a href="https://jekyllrb.com/">Jekyll</a> with <a href="https://github.com/sylhare/Type-on-Strap">Type on Strap</a>
 
   # Icons
-  rss: true  # Make sure you created a feed.xml with feed.xml layout
-  email_address: # Full email address, e.g. "sam@example.com"
+  rss:
+  email_address: rybickitim@gmail.com
   behance:
   bitbucket:
   dribbble:
   facebook:
   flickr:
   gitlab:
-  github: "sylhare"
+  github: "trybick"
   google_plus:
   instagram:
   keybase:
-  linkedin:  # Full URL
+  linkedin:  https://www.linkedin.com/in/tim-rybicki/
   pinterest:
   reddit:
   soundcloud:
@@ -54,7 +54,7 @@ theme_settings:
     pinterest:
     pocket:
     reddit: true
-    linkedin:
+    linkedin: true
     wordpress:
     email: true
 
@@ -100,10 +100,10 @@ paginate_path: "blog/page:num"
 
 
 # PORTFOLIO
-collections:
-  portfolio:
-    output: true
-    permalink: /:collection/:name
+# collections:
+#   portfolio:
+#     output: true
+#     permalink: /:collection/:name
 
 
 # BUILD SETTINGS
