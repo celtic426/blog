@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Using Two SSH Keys with Git"
+title: "Setup Two SSH Keys on a Mac"
 tags: [SSH, GitHub, code]
 ---
 
