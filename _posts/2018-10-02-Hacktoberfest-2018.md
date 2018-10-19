@@ -15,7 +15,16 @@ Hacktoberfest is all about helping people who are new to open source get comfort
 
 #### Use issue labels
 
-<img src="https://i.imgur.com/4mS0tdw.png" alt="GitHub labels example">
+Search open issues using labels to narrow down the results.
 
-* [Click here to search](https://github.com/search?q=label%3A%22good+first+issue%22+language%3Ajavascript&type=Issues) `good first issue` + `javascript`
-* [Click here to search](https://github.com/search?q=label%3A%22hacktoberfest%22+label%3A%22easy%22&type=Issues) `hacktoberfest` + `easy`
+<p align="center">
+  <img src="https://i.imgur.com/4mS0tdw.png" alt="GitHub labels example"/> <br>
+  <i>Example of issue labels</i>
+</p>
+
+* [Click here](https://github.com/search?q=label%3A%22good+first+issue%22+language%3Ajavascript&type=Issues) to search `good first issue` + `javascript`
+* [Click here](https://github.com/search?q=label%3A%22hacktoberfest%22+label%3A%22easy%22&type=Issues) to search `hacktoberfest` + `easy`
+
+### Sign up
+
+Register [here](https://hacktoberfest.digitalocean.com/sign_up/register). You only need to provide your GitHub username.
