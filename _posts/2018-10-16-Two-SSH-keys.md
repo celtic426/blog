@@ -22,7 +22,8 @@ This guide walks through setting up two SSH keys on your Mac for use with two di
 1. Navigate to your SSH directory: `cd ~/.ssh`.
 2. Running `ls -a` should list your new keys.
 3. Enter `cat id_rsa_primary.pub` and copy the output. It should start with `ssh-rsa` and end with your email address.
-```
+
+```terminal
 tim@mac .ssh $ cat id_rsa_primary.pub
 ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC33kfdi1KmASCcBrPn7wh0CjHpqu2rnlCptYQFIS21pFeF9aitpYCnZINJE91srJUjElAHzXRgLpvcROwx1wWOrULzd0dgx/8ocw0wKB26wqcSM3bWTXGd+/1/ena5SPdzfK8ZCUasIIYOYAR7YoxeBfB1aimaI/j/mE6vr57oACsWJnAdh9FV/i6XAMQJwxNccQYsAm2nG+5WwPphMv2/v7YjaLmD0L9JMuwZGyB1EZucldZLnvbvkZx6YEOG2k+dygfV8+jplC6GQ5D/RmMB5DPD/+tpHcpVQtkcEkkGZcUc5afJDj4dFkZtveD35gzOdFbvoRJDjfE+qMW7UlU1 email@gmail.com
 ```
@@ -36,7 +37,7 @@ ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC33kfdi1KmASCcBrPn7wh0CjHpqu2rnlCptYQFIS21
 
 *The first 'Host' block makes your ssh keys persist across reboots. The next two blocks setup an alias which points to an ssh key.*
 
-```
+```bash
 Host *
 	AddKeysToAgent yes
 	UseKeychain yes
@@ -61,7 +62,7 @@ Host secondary.github.com // replace secondary
 3. Repeat for second account: `ssh-add ~/.ssh/id_rsa_secondary`.
 4. You can confirm they have been added with `ssh-add -l`.
 
-```
+```terminal
 2048 SHA256:8moy5Zmdc1XDMv64mh1LHG/13zcmbYCPaY9sFwkWuFM /Users/tim/.ssh/id_rsa_primary (RSA)
 2048 SHA256:NOlGpixtyoCK7RyWoVTd7z6k/PFyEaEEeV9YpIij8Sc /Users/tim/.ssh/id_rsa_secondary (RSA)
 ```
@@ -73,7 +74,7 @@ Host secondary.github.com // replace secondary
 1. Enter `ssh -T git@primary.github.com`.
 2. Repeat step 1 for your second account.
 
-```
+```terminal
 $ ssh -T git@primary.github.com
 Hi tim! You've successfully authenticated, but GitHub does not provide shell access.
 
@@ -88,7 +89,7 @@ Hi tim! You've successfully authenticated, but GitHub does not provide shell acc
 1. Navigate to and open the git config file inside your repo folder `cd projectname/.git/.config`
 2. Overwrite the 'origin' section with the following.
 
-```
+```bash
 [remote "origin"]
 	url = git@secondary.github.com:username/project.git
 ```
