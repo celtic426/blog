@@ -1,12 +1,12 @@
 ---
 layout: post
-title: "Git Aliases Save Time"
+title: "Blaze Through Commits with Git Aliases"
 tags: [Git, command line, shortcuts, aliases]
 ---
 
 After fixing a huge bug you have a million ideas on what you want to do next. But you force yourself to stop and make a commit. You try to remember how long ago your last commit was and come up with a decent summary.
 
-But what if you could make committing a process that takes only 10 seconds? More commits help you stay organized and reduce the chance of losing work.
+But what if you could make committing a process that takes a fraction of the time? More commits also help you stay organized and reduce the chance of losing work.
 
 This is a process I used on a project recently where I racked up 140 commits over a 4-day period:
 
