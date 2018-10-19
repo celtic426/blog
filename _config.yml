@@ -16,7 +16,7 @@ theme_settings:
 
   # Header and footer text
   header_text: > #two or three lines to describe your site
-     <p>Making web development fast and fun</p>
+     <p>Making Web Development Fast and Fun</p>
   header_text_feature_image: assets/img/pexels/triangular.jpeg
   footer_text: >
    Created by <a href="https://timrybicki.com/" target="_blank">Tim Rybicki</a> <br>
