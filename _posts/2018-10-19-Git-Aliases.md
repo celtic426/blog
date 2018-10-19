@@ -4,9 +4,29 @@ title: "Git Aliases Save Time"
 tags: [Git, command line, shortcuts, aliases]
 ---
 
+After fixing a huge bug you have a million ideas on what you want to do next. But you force yourself to stop and make a commit. You try to remember how long ago your last commit was and come up with a decent summary.
+
+But what if you could make committing a process that takes only 10 seconds? More commits help you stay organized and reduce the chance of losing work.
+
+This is a process I used on a project recently where I racked up 140 commits over a 4-day period:
+
+1. You finish working on a feature
+2. `gs` *Confirm the modified file is correct*
+3. `gaa` *Stage your changes*
+4. `gcm "Add center-text to table header in App.js"` *Commit and add a message*
+
+
+
+
+to add bash aliases for git commands.
 
 location: ~/.bashrc
 run after edit: . .bash_profile
+
+1. Navigate to your home directory `cd ~`.
+2. Enter `ls -a` and you should see a file called `.bashrc`.
+3. Run `open .bashrc` (or `nano .bashrc` if you prefer the terminal).
+4. Use the following template, making changes as needed.
 
 ```bash
 #Aliases - general
