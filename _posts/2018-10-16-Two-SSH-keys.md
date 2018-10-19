@@ -1,66 +1,79 @@
 ---
 layout: post
-title: "Multiple SSH Keys on a Mac for Git"
+title: "Using SSH with Two GitHub Accounts"
 tags: [SSH, GitHub, code]
 ---
 
-I have two GitHub accounts, one that hosts my website on a custom domain and the other which holds my projects. I was able to get SSH working on both accounts with the following steps.
+This guide walks through setting up two different SSH keys on your Mac for use with two different GitHub accounts. You can then seamlessly push to and clone repos on both accounts.
 
 ### Generate the keys
 
-Running the `ssh-keygen` command will allow you generate an SSH keypair.
+*The 'ssh-keygen' command allows you to generate a public and a private keypair.*
 
-1. In terminal, run `ssh-keygen -t rsa -C "youremail@gmail.com"`
-2. Type a location and name for the file, such as `/Users/tim/.ssh/id_rsa_primary`
-3. Leave the passphrase empty and hit Enter
-4. To generate a second keypair, repeat steps 1-3 providing a different name in step 2, such as `/Users/tim/.ssh/id_rsa_secondary`
+1. In terminal run `ssh-keygen -t rsa -C "youremail@gmail.com"`
+2. Type a location and name for the file, such as `/Users/yourname/.ssh/id_rsa_primary` (replace 'primary' here)
+3. Hit `Enter` twice, leaving the passphrase empty
+4. Repeat steps 1-3 to create a second keypair, providing a different name in step 2, such as `/Users/tim/.ssh/id_rsa_secondary`
 
-### Copy keys to GitHub
+
+
+### Copy your keys to GitHub
+
+*The public RSA key is copied to GitHub while the private key lives on your machine.*
 
 1. Navigate to your SSH directory `cd ~/.ssh`
-2. Run `ls -a` to show the keys you generated
-3. Copy the output of `cat id_rsa_primary.pub`
-4. Paste this public key into a new SSH key in your GitHub settings
-5. Repeat steps 3-4 for your secondary key and second GitHub account
+2. Running `ls -a` should list your new keys.
+3. Run `cat id_rsa_primary.pub` and copy the output. It should start with `ssh-rsa` and end with your email address.
+```
+tim@mac .ssh $ cat id_rsa_primary.pub
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC33kfdi1KmASCcBrPn7wh0CjHpqu2rnlCptYQFIS21pFeF9aitpYCnZINJE91srJUjElAHzXRgLpvcROwx1wWOrULzd0dgx/8ocw0wKB26wqcSM3bWTXGd+/1/ena5SPdzfK8ZCUasIIYOYAR7YoxeBfB1aimaI/j/mE6vr57oACsWJnAdh9FV/i6XAMQJwxNccQYsAm2nG+5WwPphMv2/v7YjaLmD0L9JMuwZGyB1EZucldZLnvbvkZx6YEOG2k+dygfV8+jplC6GQ5D/RmMB5DPD/+tpHcpVQtkcEkkGZcUc5afJDj4dFkZtveD35gzOdFbvoRJDjfE+qMW7UlU1 email@gmail.com
+```
+4. Paste this public key into a new SSH key in your GitHub settings.
+5. Repeat steps 3-4 with your secondary key and second GitHub account.
 
-### Create config file
+### Create a config file
 
-1. In your ~/.ssh folder, create a file called 'config': `touch config`
+1. In your ~/.ssh folder, create a file called 'config'. `touch config`
 2. Use the following template replacing 'primary' and 'secondary' with your accounts.
+
+*The first 'Host' block makes your ssh keys persist across reboots. The next two blocks setup an alias which points to an ssh key.*
 
 ```
 Host *
 	AddKeysToAgent yes
 	UseKeychain yes
 
-Host primary.github.com
+Host primary.github.com // replace primary
 	HostName github.com
 	User git
-	IdentityFile ~/.ssh/id_rsa_primary
+	IdentityFile ~/.ssh/id_rsa_primary // replace primary
 
-Host secondary.github.com
+Host secondary.github.com // replace secondary
 	HostName github.com
 	User git
-	IdentityFile ~/.ssh/id_rsa_secondary
+	IdentityFile ~/.ssh/id_rsa_secondary // replace secondary
 ```
-
-The first 'Host' block will make your ssh keys persist across reboots. The next two blocks are setting up an alias (the first line) which points to an ssh key (fourth line).
 
 ### Add keys to your system
 
-1. (Optional) You can delete all previous cached keys with `ssh-add -D`
-2. To activate the first key on your system `ssh-add ~/.ssh/id_rsa_primary`
-3. Repeat for second account `ssh-add ~/.ssh/id_rsa_secondary`
-4. You can confirm they have been added using `ssh-add -l`
+*The 'ssh-add' command activates the keys on your system*
+
+1. (Optional) You can delete all previous cached keys: `ssh-add -D`
+2. To activate the first key on your system: `ssh-add ~/.ssh/id_rsa_primary`
+3. Repeat for second account: `ssh-add ~/.ssh/id_rsa_secondary`
+4. You can confirm they have been added: `ssh-add -l`
 
 ```
 2048 SHA256:8moy5Zmdc1XDMv64mh1LHG/13zcmbYCPaY9sFwkWuFM /Users/tim/.ssh/id_rsa_primary (RSA)
 2048 SHA256:NOlGpixtyoCK7RyWoVTd7z6k/PFyEaEEeV9YpIij8Sc /Users/tim/.ssh/id_rsa_secondary (RSA)
 ```
 
-### Test connection
+### Test the connection
 
-Connect to GitHub using your aliases and you should receive a success message.
+*Connect to GitHub and you should receive a success message*
+
+1. Run `ssh -T git@primary.github.com`
+2. Repeat step 1 for your second account.
 
 ```
 $ ssh -T git@primary.github.com
@@ -72,22 +85,22 @@ Hi tim! You've successfully authenticated, but GitHub does not provide shell acc
 
 ### Edit git config
 
-I still had to make one more change in order to push to my secondary account.
+*You might need one more change in order to push to your secondary account's repos.*
 
 1. Navigate to and open the git config file inside your repo folder `cd project/.git/.config`
 2. Overwrite the 'origin' section with the following.
-
-* `secondary` = the host alias in your ssh config file (my aliases are 'primary' and 'secondary')
-* `username` = your github username associated with this repos
-* `project` = the name of the repo
 
 ```
 [remote "origin"]
 	url = git@secondary.github.com:username/project.git
 ```
 
-### Conclusion
+* `secondary` = the host alias in your ssh config file
+* `username` = your github username associated with this repo
+* `project` = the name of this repo
 
+### Conclusion
+If you made it this far, congrats!
 
 
 ### Additional resources
