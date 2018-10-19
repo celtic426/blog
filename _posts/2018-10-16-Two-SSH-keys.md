@@ -25,10 +25,14 @@ Running the `ssh-keygen` command will allow you generate an SSH keypair.
 
 ### Create config file
 
-1. Still in your ~/.ssh folder, create a config file: `touch config`
-2. Using the following template, only change 'primary' and 'secondary' with your names
+1. In your ~/.ssh folder, create a file called 'config': `touch config`
+2. Use the following template replacing 'primary' and 'secondary' with your accounts.
 
 ```
+Host *
+	AddKeysToAgent yes
+	UseKeychain yes
+
 Host primary.github.com
 	HostName github.com
 	User git
@@ -39,6 +43,8 @@ Host secondary.github.com
 	User git
 	IdentityFile ~/.ssh/id_rsa_secondary
 ```
+
+The first 'Host' block will make your ssh keys persist across reboots. The next two blocks are setting up an alias (the first line) which points to an ssh key (fourth line).
 
 ### Add keys to your system
 
