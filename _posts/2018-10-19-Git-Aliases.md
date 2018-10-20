@@ -4,7 +4,7 @@ title: "Blaze Through Commits with Git Aliases"
 tags: [Git, command line, shortcuts, aliases]
 ---
 
-When you're forced to stop and make a commit after reaching a milestone, sometimes using Git can feel like a crutch rather than a tool. If you could sharpen your commit tool to the point where committing is a breeze, you could have more organized code with less chance of losing work.
+When you're forced to stop and make a commit after reaching a milestone, sometimes using Git can feel like a crutch rather than a tool. If you sharpen your commit tool to the point where committing is a breeze, you can have more organized code with less chance of losing work.
 
 ## Save More than a Few Keystrokes
 
