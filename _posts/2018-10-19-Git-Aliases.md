@@ -6,22 +6,25 @@ tags: [Git, command line, shortcuts, aliases]
 
 When you're forced to stop and make a commit after reaching a milestone, sometimes using Git can feel like a crutch rather than a tool. If you could sharpen your commit tool to the point where committing is a breeze, you could have more organized code with less chance of losing work.
 
-This is a process I used on a project recently where I racked up 140 commits over a 4-day period:
+## Save More than a Few Keystrokes
 
-![Commands](https://i.imgur.com/2IyWwkF.png)
+The commit process I use involves an alias for these three git commands: `git status`, `git add .`, `git commit --message`.
 
+<p align="center">
+  <img src="https://i.imgur.com/2IyWwkF.png" alt="Git aliases example"/> <br>
+  <i>Streamline your workflow to be faster and more productive.</i>
+</p>
 
-You're not just saving a few keystrokes, you're streamlining your workflow to be faster and more productive.
+While this is an example for git commits, aliases allow you to make shortcuts for any command.
 
-to add bash aliases for git commands.
+## How to Add Bash Aliases
 
-location: ~/.bashrc
-run after edit: . .bash_profile
+*Simply add the following to your .bashrc file.*
 
 1. Navigate to your home directory `cd ~`.
 2. Enter `ls -a` and you should see a file called `.bashrc`.
 3. Run `open .bashrc` (or `nano .bashrc` if you prefer the terminal).
-4. Use the following template, making changes as needed.
+4. Paste in the following, making changes as needed.
 
 ```bash
 #Aliases - general
@@ -42,3 +45,5 @@ alias gd='git diff'
 alias gds='git diff --staged'
 alias gcane='git commit --amend --no-edit'
 ```
+
+All new windows will have these aliases enabled. You can also run `. ~/.bashrc` in an existing window/tab to enable them.
