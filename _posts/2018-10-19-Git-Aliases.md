@@ -8,13 +8,10 @@ When you're forced to stop and make a commit after reaching a milestone, sometim
 
 This is a process I used on a project recently where I racked up 140 commits over a 4-day period:
 
-1. You finish working on a feature
-2. `gs` *Confirm the modified file is correct*
-3. `gaa` *Stage your changes*
-4. `gcm "Add center-text to table header in App.js"` *Commit and add a message*
+![Commands](https://i.imgur.com/2IyWwkF.png)
 
 
-You're not just saving a few keystrokes, you're streamlining your workflow to be faster and more productive. 
+You're not just saving a few keystrokes, you're streamlining your workflow to be faster and more productive.
 
 to add bash aliases for git commands.
 
