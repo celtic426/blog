@@ -2,14 +2,14 @@
 baseurl: "/blog"
 # url: "https://trybick.github.io"
 url: "https://timrybicki.com"
-title: WD News and Tricks # site's title
+title: WD News and Tips # site's title
 description: "A collection of excellent tips" # used by search engines
 
 
 # THEME-SPECIFIC CONFIGURATION
 theme_settings:
   # Meta
-  title: WD News and Tricks # blog's title
+  title: WD News and Tips # blog's title
   avatar: assets/img/triangle.svg
   favicon: assets/favicon.ico
   gravatar: # Email MD5 hash
