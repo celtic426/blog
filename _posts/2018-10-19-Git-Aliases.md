@@ -4,9 +4,7 @@ title: "Blaze Through Commits with Git Aliases"
 tags: [Git, command line, shortcuts, aliases]
 ---
 
-After fixing a huge bug you have a million ideas on what you want to do next. But you force yourself to stop and make a commit. You try to remember how long ago your last commit was and come up with a decent summary.
-
-But what if you could make committing a process that takes a fraction of the time? More commits also help you stay organized and reduce the chance of losing work.
+When you're forced to stop and make a commit after reaching a milestone, sometimes using Git can feel like a crutch rather than a tool. If you could sharpen your commit tool to the point where committing is a breeze, you could have more organized code with less chance of losing work.
 
 This is a process I used on a project recently where I racked up 140 commits over a 4-day period:
 
@@ -16,7 +14,7 @@ This is a process I used on a project recently where I racked up 140 commits ove
 4. `gcm "Add center-text to table header in App.js"` *Commit and add a message*
 
 
-
+You're not just saving a few keystrokes, you're streamlining your workflow to be faster and more productive. 
 
 to add bash aliases for git commands.
 
