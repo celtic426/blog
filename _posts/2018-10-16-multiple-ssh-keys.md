@@ -6,6 +6,8 @@ tags: [SSH, GitHub, code]
 
 This guide walks through setting up two SSH keys on your Mac for use with two different GitHub accounts. You can then seamlessly push to and clone repos on both accounts.
 
+**Side Note**: If you just need push access to another account's repo, look into the [Collaborators](https://help.github.com/articles/inviting-collaborators-to-a-personal-repository/) feature on GitHub.
+
 ### Generate Keys
 
 *The 'ssh-keygen' command allows you to generate a public and a private keypair.*
