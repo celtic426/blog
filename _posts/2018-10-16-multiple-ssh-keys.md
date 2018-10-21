@@ -41,6 +41,8 @@ ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC33kfdi1KmASCcBrPn7wh0CjHpqu2rnlCptYQFIS21
 Host *
 	AddKeysToAgent yes
 	UseKeychain yes
+	IdentityFile ~/.ssh/id_rsa_primary //replace primary
+  IdentityFile ~/.ssh/id_rsa_secondary //replace secondary
 
 Host primary.github.com // replace primary
 	HostName github.com
@@ -55,11 +57,11 @@ Host secondary.github.com // replace secondary
 
 ### Add keys to your system
 
-*The 'ssh-add' command activates the keys on your system.*
+*The 'ssh-add' command activates a key on your system.*
 
 1. (Optional) You can delete all previous cached keys with `ssh-add -D`.
-2. To activate the first key on your system: `ssh-add ~/.ssh/id_rsa_primary`.
-3. Repeat for second account: `ssh-add ~/.ssh/id_rsa_secondary`.
+2. To activate the first key on your system: `ssh-add -K ~/.ssh/id_rsa_primary`.
+3. Repeat for second account: `ssh-add -K ~/.ssh/id_rsa_secondary`.
 4. You can confirm they have been added with `ssh-add -l`.
 
 ```terminal
