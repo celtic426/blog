@@ -67,6 +67,8 @@ If you like to add more features and colors to terminal, check out [Bash-Git-Pro
   <img width="90%" src="https://i.imgur.com/6mFqjJJ.png"/> <br>
   <i>Example of Bash-Git-Prompt features</i>
 </p>
-<p>
-&nbsp;
-</p>
+
+### Additional Resources
+
+* [Jon Suh - Git Command-Line Shortcuts](https://jonsuh.com/blog/git-command-line-shortcuts/)
+* [Medium - Git on the Command Line — Improving the Experience](https://medium.com/ag-grid/git-on-the-command-line-improving-the-experience-5a604cb14cf6)
