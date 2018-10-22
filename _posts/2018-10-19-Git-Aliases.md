@@ -72,3 +72,4 @@ If you like to add more features and colors to terminal, check out [Bash-Git-Pro
 
 * [Jon Suh - Git Command-Line Shortcuts](https://jonsuh.com/blog/git-command-line-shortcuts/)
 * [Medium - Git on the Command Line — Improving the Experience](https://medium.com/ag-grid/git-on-the-command-line-improving-the-experience-5a604cb14cf6)
+* [Josh Staiger - .bash_profile vs .bashrc](http://www.joshstaiger.org/archives/2005/07/bash_profile_vs.html)
