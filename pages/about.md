@@ -14,7 +14,7 @@ To see his current projects please visit <a href="https://timrybicki.com/" targe
 </p>
 
 <div style="text-align: center">
-  <img width="60%" src="https://i.imgur.com/6YPFYb0.jpg">
+  <img width="55%" src="https://i.imgur.com/Ltp5Qle.jpg">
 </div>
 
 {% include subscription-form.html %}
