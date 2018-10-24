@@ -4,17 +4,18 @@ title: "Best Chrome Extensions for Developers"
 tags: [Google Chrome, extensions, productivity tools]
 ---
 
-You cover the well-known extensions, and then get to the good stuff. Hopefully you will find one or two new ones that makes your life better.
+Let's cover the well-known extensions, and then get to the good stuff. Hopefully you will find one or two new ones that makes your life better.
+
 ## The Basics
 
-If you work with APIs, you probably already have JSON Formatter, to make JSON into a readbale format.
+If you work with APIs, you probably already have <a href="https://chrome.google.com/webstore/detail/json-formatter/bcjindcccaagfpapjjmafapmmgkkhgoa?hl=en" target="_blank">JSON Formatter</a> to make JSON into a readbale format.
 
-If you work with React, you probably already have React Developer Tools.
+If you work with React, you probably already have <a href="https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=en" target="_blank">React Developer Tools</a>.
 
-If you work with HTML and CSS, you probably already know about font identifiers and CSS color pickers.
+If you work with HTML and CSS, you probably already know about <a href="https://chrome.google.com/webstore/detail/whatfont/jabopobgcpjmedljpbcaablpmlmfcogm?hl=en" target="_blank">WhatFont</a> and <a href="https://chrome.google.com/webstore/detail/colorzilla/bhlhnicpbhignbdhedgjhgdocnmhomnp?hl=en" target="_blank">ColorZilla</a> (or equivalents).
 
 
-## Hidden Gems
+## The Good Stuff
 
 #### Right Click Opens Link New Tab Correct Order
 
@@ -24,7 +25,7 @@ Simply right-click to open a link in a new tab.
 
 #### Session Buddy
 
-Scenario: You have 20 tabs open researching a new project. 
+Scenario: You have 20 tabs open researching a new project.
 
 <img src="https://i.imgur.com/5HsLW1M.png">
 
