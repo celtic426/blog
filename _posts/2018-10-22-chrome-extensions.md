@@ -4,8 +4,7 @@ title: "Best Chrome Extensions for Developers"
 tags: [Google Chrome, extensions, productivity tools]
 ---
 
-You probably already know some of these.
-
+You cover the well-known extensions, and then get to the good stuff. Hopefully you will find one or two new ones that makes your life better.
 ## The Basics
 
 If you work with APIs, you probably already have JSON Formatter, to make JSON into a readbale format.
@@ -25,7 +24,7 @@ Simply right-click to open a link in a new tab.
 
 #### Session Buddy
 
-Description
+Scenario: You have 20 tabs open researching a new project. 
 
 <img src="https://i.imgur.com/5HsLW1M.png">
 
