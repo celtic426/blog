@@ -8,27 +8,33 @@ Let's cover the well-known extensions, and then get to the good stuff. Hopefully
 
 ## The Basics
 
-You probably have heard of these: <a href="https://chrome.google.com/webstore/detail/json-formatter/bcjindcccaagfpapjjmafapmmgkkhgoa?hl=en" target="_blank">JSON Formatter</a>, <a href="https://chrome.google.com/webstore/detail/whatfont/jabopobgcpjmedljpbcaablpmlmfcogm?hl=en" target="_blank">WhatFont</a>, and <a href="https://chrome.google.com/webstore/detail/colorzilla/bhlhnicpbhignbdhedgjhgdocnmhomnp?hl=en" target="_blank">ColorZilla</a>.
+You probably have heard extenions like <a href="https://chrome.google.com/webstore/detail/json-formatter/bcjindcccaagfpapjjmafapmmgkkhgoa?hl=en" target="_blank">JSON Formatter</a>, <a href="https://chrome.google.com/webstore/detail/whatfont/jabopobgcpjmedljpbcaablpmlmfcogm?hl=en" target="_blank">WhatFont</a>, and <a href="https://chrome.google.com/webstore/detail/colorzilla/bhlhnicpbhignbdhedgjhgdocnmhomnp?hl=en" target="_blank">ColorZilla</a>.
 
 
 ## The Good Stuff
 
 ### Octotree
 
-Loads a sidebar tree-view of any GitHub repo.
+Explore and find what you need. Octotree lets you browse the content of any GitHub repos with a familiar IDE-like tree-view. Genius!
 
-<img src="https://i.imgur.com/fOHbGbx.jpg" alt="Octotree screenshot">
+<p align="center">
+  <img src="https://i.imgur.com/fOHbGbx.jpg" alt="Octotree screenshot"> <br>
+  <i>Browse GitHub repos with a sidebar tree view.</i>
+</p>
 
 <a href="https://chrome.google.com/webstore/detail/octotree/bkhaagjahfmjljalopjnoealnfndnagc" target="_blank">Download Octotree</a>
 
 
 ### imgur Uploader
 
-Adds the option in right-click menu to re-host image on imgur. After clicking, a new imgur tab will appear with your hosted image.
+Get an Imgur link to any photo you see in seconds. Right-click and select "Re-host image" and a new tab will open an Imgur page with your photo.
 
-<img src="https://i.imgur.com/QeoqWGk.jpg">
+Top tip: When viewing a photo on Imgur, find a direct link with file extension for your projects by clicking the arrow and then 'Share links'.
 
-<!-- Top tip: Use the 'Share links' feature to get the direct link with file extension. -->
+<p align="center">
+  <img src="https://i.imgur.com/QeoqWGk.jpg" alt="imgur Uploader screenshot"> <br>
+  <i>Get a hosted imgur URL with two-clicks!</i>
+</p>
 
 <a href="https://chrome.google.com/webstore/detail/imgur-uploader/lcpkicdemehhmkjolekhlglljnkggfcf?hl=en" target="_blank">Download imgur Uploader</a>
 
