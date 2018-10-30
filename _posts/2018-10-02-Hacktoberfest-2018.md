@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Free T-Shirts and Open Source"
-tags: [open source, GitHub, Hacktoberfest, beginner]
+tags: [Open source, GitHub, Hacktoberfest, Beginner]
 ---
 
 DigitalOcean is sponsoring [Hacktoberfest](https://hacktoberfest.digitalocean.com/) for the fifth year in a row. The first 50,000 people to sign up and make five pull requests in the month of October receive a free t-shirt!

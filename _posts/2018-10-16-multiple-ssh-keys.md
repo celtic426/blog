@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Using SSH with Two GitHub Accounts"
-tags: [SSH, GitHub, code]
+tags: [SSH, GitHub, Code]
 ---
 
 This guide walks through setting up two SSH keys on your Mac for use with two different GitHub accounts. You can then seamlessly push to and clone repos on both accounts.
