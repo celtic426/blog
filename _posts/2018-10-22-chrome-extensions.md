@@ -91,9 +91,9 @@ This extension automatically puts tabs to sleep after they have not been touched
 
 ## (Bonus) Reddit Enhancement Suite
 
-With 5 stars on the Google Play Store, RES has been around for a while providing a better Reddit experience out of the box. Features like infinite scroll, night-mode, account switching, and countless UI improvements make this essential for everyone using Reddit.
+RES has been around since 2010 providing a better Reddit experience out of the box. Features like infinite scroll, night-mode, account switching, and countless UI improvements make this essential for everyone using Reddit.
 
-<a href="https://chrome.google.com/webstore/detail/the-great-suspender/klbibkeccnjlkjkiokjodocebajanakg?hl=en" target="_blank">Download</a>
+<a href="https://chrome.google.com/webstore/detail/reddit-enhancement-suite/kbmfpngjjgdllneeigpgjifpgocmfgmb?hl=en-US" target="_blank">Download</a>
 
 <p align="center">
   <img src="https://i.imgur.com/RocUlzI.png" alt="Reddit Enhancement Suite screenshot"> <br>
@@ -103,4 +103,4 @@ With 5 stars on the Google Play Store, RES has been around for a while providing
 
 ## Conclusion
 
-I hope some of these will help you. If you have any favorite extensions, let me know and I can add to the list.
+If you have any favorite extensions, let me know and I can add to the list!
