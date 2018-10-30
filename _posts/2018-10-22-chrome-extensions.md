@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Best Chrome Extensions for Developers"
-tags: [Google Chrome, extensions, productivity]
+tags: [Google Chrome, Extensions, Productivity]
 ---
 
 You probably have heard of extensions like <a href="https://chrome.google.com/webstore/detail/json-formatter/bcjindcccaagfpapjjmafapmmgkkhgoa?hl=en" target="_blank">JSON Formatter</a>, <a href="https://chrome.google.com/webstore/detail/whatfont/jabopobgcpjmedljpbcaablpmlmfcogm?hl=en" target="_blank">WhatFont</a>, and <a href="https://chrome.google.com/webstore/detail/colorzilla/bhlhnicpbhignbdhedgjhgdocnmhomnp?hl=en" target="_blank">ColorZilla</a>. Let's look at some other ones that might be able to save you time.
@@ -9,20 +9,20 @@ You probably have heard of extensions like <a href="https://chrome.google.com/we
 
 ## Octotree
 
-Octotree lets you browse the content of GitHub repos with a familiar IDE-like tree view. Genius!
+Octotree adds a sidebar to GitHub allowing you to browse a repository with a familiar IDE-like tree view.
 
 <a href="https://chrome.google.com/webstore/detail/octotree/bkhaagjahfmjljalopjnoealnfndnagc" target="_blank">Download</a>
 
 <p align="center">
   <img src="https://i.imgur.com/fOHbGbx.jpg" alt="Octotree screenshot"> <br>
-  <i>Explore and find what you need with a sidebar tree view in GitHub.</i>
+  <i>Explore and find what you need on GitHub with sidebar navigation.</i>
 </p>
 
-
+<br>
 
 ## imgur Uploader
 
-Get your own Imgur link to any photo in seconds. Right-click any image and select "Re-host image" and a new tab will open an Imgur page with your photo.
+Get a unique hosted link to any photo in seconds. Right-click an image, select "Re-host image", and a new tab will open an imgur page with your photo. You can then use the link on your website (just beware of copyright).
 
 <a href="https://chrome.google.com/webstore/detail/imgur-uploader/lcpkicdemehhmkjolekhlglljnkggfcf?hl=en" target="_blank">Download</a>
 
@@ -31,7 +31,11 @@ Get your own Imgur link to any photo in seconds. Right-click any image and selec
   <i>Get a hosted imgur URL with just two clicks.</i>
 </p>
 
+**Top Tip**: use "Get Share Links" on your imgur photo to find the direct link.
 
+<img src="https://i.imgur.com/w0xnMMa.png" alt="imgur direct link demonstration">
+
+<br>
 
 ## Session Buddy
 
@@ -44,11 +48,11 @@ Session Buddy allows you to save open tabs if you need to restart your machine o
   <i>Save your Chrome tabs for later.</i>
 </p>
 
-
+<br>
 
 ## Right Click Opens Link New Tab Correct Order
 
-Eliminate a step from "Open Link in New Tab" and use your right-click button alone to open new tabs. Now right-clicking a link wil open the link in a new tab in the background with just one-click. This is super helpful for quickly Googling and opening multiple Stack Overflow results.
+Installing this extension will change your right-click into a one-click button for opening new tabs. Instead or right-clicking + selecting "Open Link in New Tab", now right-clicking a link will open the link in a new tab in the background with just one-click. This is super helpful for Googling and quickly opening multiple Stack Overflow results.
 
 <a href="https://chrome.google.com/webstore/detail/right-click-opens-link-ne/mhjkeimpgjokbjmioglhlngefbddppnn?hl=en" target="_blank">Download</a>
 
@@ -74,7 +78,7 @@ Line up two tabs (or more) side-by-side when you need to have access to mulitple
 
 ## The Great Suspender
 
-This extension automatically puts tabs to sleep after they have not been touched for an hour. Clicking anywhere on a sleeping page will re-load the page.
+This extension automatically puts tabs to sleep after they have not been touched for an hour. If you notice your computer bogged down with too many tabs, this extension will allow you to keep your tabs but use less memory.
 
 <a href="https://chrome.google.com/webstore/detail/the-great-suspender/klbibkeccnjlkjkiokjodocebajanakg?hl=en" target="_blank">Download</a>
 
@@ -87,7 +91,7 @@ This extension automatically puts tabs to sleep after they have not been touched
 
 ## (Bonus) Reddit Enhancement Suite
 
-With 5 stars on the Google Play Store, RES has been around for a while providing a better Reddit experience out of the box. Features like never-ending-scroll, account switching, and countless UI improvements make this essential for every Redditor.
+With 5 stars on the Google Play Store, RES has been around for a while providing a better Reddit experience out of the box. Features like infinite scroll, night-mode, account switching, and countless UI improvements make this essential for everyone using Reddit.
 
 <a href="https://chrome.google.com/webstore/detail/the-great-suspender/klbibkeccnjlkjkiokjodocebajanakg?hl=en" target="_blank">Download</a>
 
@@ -99,4 +103,4 @@ With 5 stars on the Google Play Store, RES has been around for a while providing
 
 ## Conclusion
 
-I hope you found an extension that will improve your workflow. Please let me know what your favorite Chrome extensions are.
+I hope some of these will help you. If you have any favorite extensions, let me know and I can add to the list.
