@@ -1,20 +1,20 @@
 # SITE CONFIGURATION
 baseurl: '/blog'
 url: 'https://timr.dev'
-title: WD News and Tips # site's title
-description: 'A collection of excellent tips' # used by search engines
+title: timr's Blog # site's title
+description: 'Web Development' # used by search engines
 
 # THEME-SPECIFIC CONFIGURATION
 theme_settings:
   # Meta
-  title: WD News and Tips # blog's title
+  title: timr's Blog # blog's title
   avatar: assets/img/triangle.svg
   favicon: assets/favicon.ico
   gravatar: # Email MD5 hash
 
   # Header and footer text
   header_text: > #two or three lines to describe your site
-    <p>Making Web Development Fast and Fun</p>
+    <p>Finding simplicity and speed</p>
   header_text_feature_image: assets/img/pexels/triangular.jpeg
   footer_text: >
     Powered by <a href="https://jekyllrb.com/">Jekyll</a> with <a href="https://github.com/sylhare/Type-on-Strap">Type on Strap</a> <br>
