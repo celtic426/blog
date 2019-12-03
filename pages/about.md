@@ -2,7 +2,7 @@
 layout: page
 title: About
 permalink: /about/
-feature-img: "assets/img/pexels/circuit.jpeg"
+feature-img: 'assets/img/pexels/circuit.jpeg'
 tags: [About, Archive]
 ---
 
@@ -16,5 +16,3 @@ To see his current projects please visit <a href="https://timrybicki.com/" targe
 <div style="text-align: center">
   <img width="55%" src="https://i.imgur.com/Ltp5Qle.jpg">
 </div>
-
-{% include subscription-form.html %}
