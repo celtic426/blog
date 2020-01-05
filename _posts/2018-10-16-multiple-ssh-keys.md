@@ -27,7 +27,7 @@ This guide walks through setting up two SSH keys on your Mac for use with two di
 
 ```terminal
 tim@mac .ssh $ cat id_rsa_primary.pub
-ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC33kfdi1KmASCcBrPn7wh0CjHpqu2rnlCptYQFIS21pFeF9aitpYCnZINJE91srJUjElAHzXRgLpvcROwx1wWOrULzd0dgx/8ocw0wKB26wqcSM3bWTXGd+/1/ena5SPdzfK8ZCUasIIYOYAR7YoxeBfB1aimaI/j/mE6vr57oACsWJnAdh9FV/i6XAMQJwxNccQYsAm2nG+5WwPphMv2/v7YjaLmD0L9JMuwZGyB1EZucldZLnvbvkZx6YEOG2k+dygfV8+jplC6GQ5D/RmMB5DPD/+tpHcpVQtkcEkkGZcUc5afJDj4dFkZtveD35gzOdFbvoRJDjfE+qMW7UlU1 email@gmail.com
+ssh-rsa [your key] email@gmail.com
 ```
 4. In your GitHub account settings, create a new SSH key and paste the output from the previous step.
 5. Repeat steps 3-4 with your secondary key and second GitHub account.
