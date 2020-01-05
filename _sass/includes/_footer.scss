@@ -1,5 +1,8 @@
 .site-footer {
     @extend %padding-regular;
+    // TPR - Reduce size between mail form and Created by footer
+    padding-top: 3%;
+
     display: inline-block;
     text-align: center;
     width: 100%;
