@@ -1,9 +1,10 @@
 ul.share-buttons {
     list-style: none;
-    padding: $padding-x-small/2 0 $padding-x-small/2 0;
+    // TPR - increase space above share buttons
+    padding: 8% 0 $padding-x-small/2 0;
     margin: 0;
     text-align: center;
-    
+
     div.meta {
         display: inline;
         margin-right: 0.5em;
@@ -11,7 +12,7 @@ ul.share-buttons {
 
     li {
         display: inline;
-        
+
         a:hover {
             text-decoration: none;
         }
