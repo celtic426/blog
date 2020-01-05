@@ -8,21 +8,26 @@ Get up and running in minutes creating your own VSCode extension with these tool
 
 ## Generating Project Files
 
-Install the pre-requisities: `npm install -g yo generator-code`. These tools create a working VSCode extension which you will be able to edit.
+Install the pre-requisites and run the wizard:
 
-Run the wizard: `yo code`. You will be asked to enter your project details like the name and your choice of either JavaScript or TypeScript.
+```terminal
+npm install -g yo generator-code
+yo code
+```
+
+You will be asked to choose JavaScript or TypeScript and enter your project details. This creates a working VSCode extension which you will be able to run straight away.
 
 ## Developing
 
-As soon as the files are generated, you have a working extension you can try out. Press 'F5' or click "Run Extension" in the status bar to run the extension. This will open a new window which has your extension activated. You can begin testing the pre-built "Hello World" command.
+Press 'F5' or click "Run Extension" in the status bar to run the extension. This will open a new window which has your extension activated. You can begin testing the pre-built "Hello World" command.
 
-The main file to get started with is `extension.ts`. If you `console.log` something from here, it will appear in the new window's console. You can open the console under _Help --> Toggle Developer Tools_.
+The main file to get started with is `extension.ts`. If you `console.log` something, it will appear in the new window's console. You can open the console under _Help --> Toggle Developer Tools_.
 
-If you want your code to run as soon as VSCode is laucnhed, instead of the default which only runs when your commands are called, then change the `activationEvents` field in _package.json_ to `["*"]`.
+If you want your code to run as soon as VSCode is launched, instead of the default which only runs when your commands are called, then change the `activationEvents` field in _package.json_ to `["*"]`.
 
-## Get Inspiration
+## Getting Inspiration
 
-Browse samples projects created by Microsoft [here](https://github.com/microsoft/vscode-extension-samples). For example, [this extension](https://github.com/microsoft/vscode-extension-samples/blob/master/statusbar-sample/src/extension.ts) shows how to create a status bar item which shows how many characters are selected.
+Browse samples projects created by Microsoft [here](https://github.com/microsoft/vscode-extension-samples). For example, [this extension](https://github.com/microsoft/vscode-extension-samples/blob/master/statusbar-sample/src/extension.ts) shows how to create a status bar item displaying how many characters are selected.
 
 My extension [Terminal Zoom](https://github.com/trybick/vscode-terminal-zoom/blob/master/src/extension.ts) is a good example of creating status bar items, registering commands, and using quick pick menus.
 
@@ -37,9 +42,13 @@ My extension [Terminal Zoom](https://github.com/trybick/vscode-terminal-zoom/blo
 
 ## Updating
 
-Once your extension is published and you make updates to your code, you can publish updates easily. Simply run the publish command followed by your choice of version incrementor: `vsce publish [minor | major | patch]`
+Once your extension is published and you make updates to your code, you can publish updates by running the publish command followed by your choice of version incrementor:
 
-This command will update your extension on the VSCode Marketplace, increment the version number in *package.json*, and create a new commit with the version number as the commit message.
+```terminal
+vsce publish [minor | major | patch]
+```
+
+This command updates your extension on the VSCode Marketplace, increments the version number in _package.json_, and creates a new commit with this change.
 
 ## Further Reading
 
