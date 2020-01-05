@@ -1,52 +1,47 @@
 ---
 layout: post
-title: 'How to Create a VSCode Extension'
+title: 'Creating a VSCode Extension'
 tags: [VSCode, extension, terminal]
 ---
 
-It's easy to get started developing VSCode extensions!
+Get up and running in minutes creating your own VSCode extension with these tools and examples.
 
-## How to Create a VSCode Extension
+## Generating Project Files
 
-## Scaffolding the Project
+Install the pre-requisities: `npm install -g yo generator-code`. These tools create a working VSCode extension which you will be able to edit.
 
-Follow these steps to generate a project folder with a working extension.
-
-- `npm install -g yo generator-code` - install pre-reqs
-- `yo code` - start the project generator
-- Choose options (e.g. JavaScript or TypeScript and give it a name)
+Run the wizard: `yo code`. You will be asked to enter your project details like the name and your choice of either JavaScript or TypeScript.
 
 ## Developing
 
-Press 'F5' or click "Run Extension" in the status bar to run the extension. This will open a new window which has your extension activated.
+As soon as the files are generated, you have a working extension you can try out. Press 'F5' or click "Run Extension" in the status bar to run the extension. This will open a new window which has your extension activated. You can begin testing the pre-built "Hello World" command.
 
-If you `console.log` something, it will appear in the new window's console. You can open the console under _Help --> Toggle Developer Tools_.
+The main file to get started with is `extension.ts`. If you `console.log` something from here, it will appear in the new window's console. You can open the console under _Help --> Toggle Developer Tools_.
 
-## When the Extension should Run
+If you want your code to run as soon as VSCode is laucnhed, instead of the default which only runs when your commands are called, then change the `activationEvents` field in _package.json_ to `["*"]`.
 
-By default the extension only runs when the command is run. If you want the extension to run upon startup, change the `activationEvents` field in **package.json**:
+## Get Inspiration
 
-```js
-  "activationEvents": [
-    "*"
-  ],
-```
+Browse samples projects created by Microsoft [here](https://github.com/microsoft/vscode-extension-samples). For example, [this extension](https://github.com/microsoft/vscode-extension-samples/blob/master/statusbar-sample/src/extension.ts) shows how to create a status bar item which shows how many characters are selected.
+
+My extension [Terminal Zoom](https://github.com/trybick/vscode-terminal-zoom/blob/master/src/extension.ts) is a good example of creating status bar items, registering commands, and using quick pick menus.
 
 ## Publishing
 
 - Install the publishing tool with `npm install -g vsce`
 - Create a personal access token using [these steps](https://code.visualstudio.com/api/working-with-extensions/publishing-extension#get-a-personal-access-token)
-- Create a publisher with `vsce create-publisher (publisher name)` (requires access token created in previous step)
+- Create a publisher with `vsce create-publisher (publisher name)`
 - Add your publisher name to your **package.json** file: `"publisher": "my-publisher-name",`
 - `vsce package`
 - `vsce publish`
 
-## Updating Your Extension
+## Updating
 
-- Run the publish command followed by your choice of version incrementor: `vsce publish [minor | major | patch]`
+Once your extension is published and you make updates to your code, you can publish updates easily. Simply run the publish command followed by your choice of version incrementor: `vsce publish [minor | major | patch]`
 
-In addition to updating your extension on the VSCode Marketplace, this command also increments the version number in your **package.json** and creates a new git commit with the version number as the commit message.
+This command will update your extension on the VSCode Marketplace, increment the version number in *package.json*, and create a new commit with the version number as the commit message.
 
-## Get Inspiration
+## Further Reading
 
-Browse samples projects created by Microsoft [here](https://github.com/microsoft/vscode-extension-samples). For example, [this extension](https://github.com/microsoft/vscode-extension-samples/blob/master/statusbar-sample/src/extension.ts) shows how to create a status bar item which shows how many characters are selected.
+- [Microsoft - Your First Extension](https://code.visualstudio.com/api/get-started/your-first-extension)
+- [Microsoft - Publishing Extensions](https://code.visualstudio.com/api/working-with-extensions/publishing-extension)
