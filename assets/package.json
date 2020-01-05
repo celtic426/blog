@@ -1,24 +1,10 @@
 {
-  "name": "type-on-strap",
-  "version": "1.0.0",
-  "description": "jekyll theme",
+  "name": "timr-blog",
+  "version": "2.0.0",
+  "description": "Tech blog",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Sylhare/Type-on-Strap.git"
-  },
-  "keywords": [
-    "jekyll"
-  ],
-  "author": "sylhare",
+  "author": "Tim Rybicki",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/Sylhare/Type-on-Strap/issues"
-  },
-  "homepage": "https://github.com/Sylhare/Type-on-Strap#readme",
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-concat": "^2.6.1",
