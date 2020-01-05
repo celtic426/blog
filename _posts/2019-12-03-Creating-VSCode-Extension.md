@@ -15,15 +15,15 @@ npm install -g yo generator-code
 yo code
 ```
 
-You will be asked to choose JavaScript or TypeScript and enter your project details. This creates a working VSCode extension which you will be able to run straight away.
+You will be asked to choose JavaScript or TypeScript and for a project name. This creates a working VSCode extension which you will be able to run straight away.
 
 ## Developing
 
-Press 'F5' or click "Run Extension" in the status bar to run the extension. This will open a new window which has your extension activated. You can begin testing the pre-built "Hello World" command.
+Press _F5_ or go to _Debug ---> Start Debugging_ to run the extension. This opens a new window which has the extension activated. You can begin testing the pre-built "Hello World" command.
 
 The main file to get started with is `extension.ts`. If you `console.log` something, it will appear in the new window's console. You can open the console under _Help --> Toggle Developer Tools_.
 
-If you want your code to run as soon as VSCode is launched, instead of the default which only runs when your commands are called, then change the `activationEvents` field in _package.json_ to `["*"]`.
+If you want your code to run as soon as VSCode is launched, instead of the default which only runs when your commands are called, consider changing the `activationEvents` field in _package.json_ to `["*"]`.
 
 ## Getting Inspiration
 
@@ -36,13 +36,13 @@ My extension [Terminal Zoom](https://github.com/trybick/vscode-terminal-zoom/blo
 - Install the publishing tool with `npm install -g vsce`
 - Create a personal access token using [these steps](https://code.visualstudio.com/api/working-with-extensions/publishing-extension#get-a-personal-access-token)
 - Create a publisher with `vsce create-publisher (publisher name)`
-- Add your publisher name to your **package.json** file: `"publisher": "my-publisher-name",`
+- Add your publisher name to *package.json*: `"publisher": "my-publisher-name"`
 - `vsce package`
 - `vsce publish`
 
 ## Updating
 
-Once your extension is published and you make updates to your code, you can publish updates by running the publish command followed by your choice of version incrementor:
+Once your extension is published and you make changes to your code, you can push updates by running the publish command followed by your choice of a version incrementor:
 
 ```terminal
 vsce publish [minor | major | patch]
