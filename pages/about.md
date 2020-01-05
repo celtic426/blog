@@ -7,7 +7,7 @@ tags: [About, Archive]
 ---
 
 <p style="text-align: center">
-Hi! I'm a software developer and musician from Boston, MA. <br>
+Hi! I'm a software developer and musician from Boston, MA and this is my dog Izzy. <br>
 To see my current projects visit <a href="https://timr.dev/" target="_blank">timr.dev</a>
 </p>
 
