@@ -1,13 +1,13 @@
 # SITE CONFIGURATION
 baseurl: '/blog'
 url: 'https://timr.dev'
-title: timr's Blog # site's title
-description: 'Web Development' # used by search engines
+title: 'timr Blog' # title in tab
+description: 'Web Developer Tech Blog' # used by search engines
 
 # THEME-SPECIFIC CONFIGURATION
 theme_settings:
   # Meta
-  title: timr's Blog # blog's title
+  title: timr.dev # title in page header
   avatar: assets/img/triangle.svg
   favicon: assets/favicon.ico
   gravatar: # Email MD5 hash
@@ -17,7 +17,7 @@ theme_settings:
     <p>Finding simplicity and speed</p>
   header_text_feature_image: assets/img/pexels/triangular.jpeg
   footer_text: >
-    Created by <a href="https://timr.dev/" target="_blank">Tim Rybicki</a> with <a href="https://jekyllrb.com/">Jekyll</a> with <a href="https://github.com/sylhare/Type-on-Strap">Type on Strap</a>
+    Created by <a href="https://timr.dev/" target="_blank">Tim Rybicki</a> with <a href="https://jekyllrb.com/">Jekyll</a> and <a href="https://github.com/sylhare/Type-on-Strap">Type on Strap</a>
 
   # Icons
   rss:
