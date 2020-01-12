@@ -1,0 +1,39 @@
+---
+layout: post
+title: 'How to get your current location using Bash or Node.js'
+tags: [save, persist, file, node.js, script]
+---
+
+We look at creating a script, in bash and Node.js, to calculate your current city by making a request to the [IPinfo](https://ipinfodb.com/) API (no sign-up required).
+
+## Bash
+
+```bash
+city=$(curl -s https://ipinfo.io | /usr/local/bin/jq ".city")
+```
+
+All it takes is one line in bash! Notice our use of [jq](https://github.com/stedolan/jq), a lightweight command-line JSON processor, to parse the city name. You can install `jq` with homebrew: `brew install jq`.
+
+## Node.js
+
+```js
+const rp = require('request-promise');
+
+rp('https://ipinfo.io/json').then(res => {
+  const json = JSON.parse(res);
+
+  return json.city;
+});
+```
+
+We're using [request-promise](https://github.com/request/request-promise) to make the API call using JavaScript, but any similar library or method can be used.
+
+## Project Example
+
+[This code snippet](https://github.com/trybick/slack-location-manager/blob/master/src/setStatus/calculateEmoji.js#L27) shows a real-world use of these scripts where I calculated the user's city in order to update their status on Slack.
+
+## Further Reading
+
+- [IPinfo](https://ipinfodb.com/)
+- [jq](https://github.com/stedolan/jq)
+- [request-promise](https://github.com/request/request-promise)

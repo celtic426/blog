@@ -46,4 +46,4 @@ Here is an example of one way you might create a function using these features. 
 
 ## Further Reading
 
-- [GitHub: node-persist](https://github.com/simonlast/node-persist)
+- [node-persist](https://github.com/simonlast/node-persist)
