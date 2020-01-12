@@ -1,33 +1,49 @@
 ---
 layout: post
-title: 'Save a file to local machine with Node.js'
+title: 'Saving a local file with Node.js'
 tags: [save, persist, file, node.js, script]
 ---
 
-Find out how to store data in a file on a user's machine and retrieve it later using Node.js. This might be useful if you need to store a token and reference it later (although this is not secure since it's stored in plain text).
+Find out how to store a JSON file on a user's machine and retrieve it later using Node.js.
 
-## Creating the file
+## Creating the File
 
 ```javascript
 const storage = require('node-persist');
 
+await storage.init({ dir: '/Applications/my-app' });
+await storage.setItem('name', 'myName');
+```
+
+Running the commands above creates a file that looks like this:
+
+```json
+{
+  "key": "name",
+  "value": "myName"
+}
+```
+
+## Retrieving the Data
+
+```javascript
+await storage.init({ dir: '/Applications/my-app' });
+const item = await storage.getItem('myData');
+```
+
+To access the data we saved, the same init command is called followed my the `getItem` method, while specifying the key you used while saving.
+
+## Real-world Example
+
+```javascript
 async function saveToDisk(dataToSave) {
   await storage.init({ dir: '/Applications/my-app' }).catch(err => console.error(err));
   await storage.setItem('myData', dataToSave);
 }
 ```
 
-Here we create a function which we can provide a string to save. After running this command you should have a file in the specified folder containing text of the key-pair values given.
+Here is an example of one way you might create a function using these features. For a similar process used to store a token, view [this code snippet](https://github.com/trybick/slack-location-manager/blob/master/src/install/saveToDisk.js#L12) for my project [slack-location-manager](https://github.com/trybick/slack-location-manager).
 
-## Retrieving the data
+## Further Reading
 
-```javascript
-await storage.init({ dir: '/Applications/my-app' }).catch(err => console.error(err));
-const item = await storage.getItem('myData');
-```
-
-To access the data we saved, the same init command is called followed my the `getItem` method, while specifying the key you used while saving.
-
-## Summary
-
-[node-persist](https://github.com/simonlast/node-persist)
+- [GitHub: node-persist](https://github.com/simonlast/node-persist)
