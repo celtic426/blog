@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Creating a Cron Job with Node.js'
+title: 'Creating a cron job with Node.js'
 tags: [cron, cronjob, node.js, script]
 ---
 
@@ -21,7 +21,7 @@ This example shows most of what you need to now. Replace `ls` with the command t
 
 You may want to redirect the output of a command like this: `ls > /dev/null 2>&1` so that, in the event of any errors, it doesn't prompt the user with a message upon opening a new terminal session.
 
-## Listing jobs
+## Listing Jobs
 
 ```javascript
 const jobs = crontab.jobs();

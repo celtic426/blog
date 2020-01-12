@@ -15,7 +15,7 @@ await storage.init({ dir: '/Applications/my-app' });
 await storage.setItem('name', 'myName');
 ```
 
-Running the commands above creates a file that looks like this:
+Running these commands creates a file that looks like this:
 
 ```json
 {
@@ -31,7 +31,7 @@ await storage.init({ dir: '/Applications/my-app' });
 const item = await storage.getItem('myData');
 ```
 
-To access the data we saved, the same init command is called followed my the `getItem` method, while specifying the key you used while saving.
+To access the data, the same init command is called followed my the `getItem` method, while providing the key used while saving.
 
 ## Real-world Example
 

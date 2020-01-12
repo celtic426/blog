@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Creating a VSCode Extension'
+title: 'Creating a VSCode extension'
 tags: [VSCode, extension, terminal]
 ---
 

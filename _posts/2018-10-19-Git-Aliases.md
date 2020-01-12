@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Blaze Through Commits with Git Aliases"
+title: "Blaze through commits with git aliases"
 tags: [GitHub, Command line, Productivity, Aliases]
 ---
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Using SSH with Two GitHub Accounts"
+title: "Using SSH with two GitHub accounts"
 tags: [SSH, GitHub, Code]
 ---
 

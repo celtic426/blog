@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Free T-Shirts and Open Source"
+title: "Free T-Shirts and open source software"
 tags: [Open source, GitHub, Hacktoberfest, Beginner]
 ---
 

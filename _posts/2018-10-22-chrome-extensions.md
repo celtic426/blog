@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Best Chrome Extensions for Developers'
+title: 'Best underrated developer Chrome extensions'
 tags: [Google Chrome, Extensions, Productivity]
 ---
 
