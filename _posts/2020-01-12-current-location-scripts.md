@@ -1,10 +1,10 @@
 ---
 layout: post
-title: 'How to get your current location using Bash or Node.js'
+title: 'How to get your current city using Bash or Node.js'
 tags: [save, persist, file, node.js, script]
 ---
 
-We look at creating a script, in bash and Node.js, to calculate your current city by making a request to the [IPinfo](https://ipinfodb.com/) API (no sign-up required).
+We look at creating a script, using bash or Node.js, to calculate your current city using the [IPinfo](https://ipinfodb.com/) API (no sign-up required).
 
 ## Bash
 
@@ -30,7 +30,7 @@ We're using [request-promise](https://github.com/request/request-promise) to mak
 
 ## Project Example
 
-[This code snippet](https://github.com/trybick/slack-location-manager/blob/master/src/setStatus/calculateEmoji.js#L27) shows a real-world use of these scripts where I calculated the user's city in order to update their status on Slack.
+[This code snippet](https://github.com/trybick/slack-location-manager/blob/master/src/setStatus/calculateEmoji.js#L27) shows a real-world use of these scripts where the city is used to update the user's status on Slack.
 
 ## Further Reading
 
