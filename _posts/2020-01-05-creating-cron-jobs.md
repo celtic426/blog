@@ -32,3 +32,8 @@ You can check current jobs using the method above or by running the command `cro
 ## Summary
 
 For me it was valuable to find this library, because it is the only one available that will actually access system cron jobs. For a real world example, reference my project [slack-location-manager](https://github.com/trybick/slack-location-manager/blob/master/src/install/createCron.js#L9).
+
+## Further Reading
+
+- GitHub: [node-crontab](https://github.com/dachev/node-crontab)
+- Cron scheduling tool: [crontab.guru](https://crontab.guru/)

@@ -28,12 +28,12 @@ Running these commands creates a file that looks like this:
 
 ```javascript
 await storage.init({ dir: '/Applications/my-app' });
-const item = await storage.getItem('myData');
+const item = await storage.getItem('name');
 ```
 
 To access the data, the same init command is called followed my the `getItem` method, while providing the key used while saving.
 
-## Real-world Example
+## Real World Example
 
 ```javascript
 async function saveToDisk(dataToSave) {
@@ -46,4 +46,4 @@ Here is an example of one way you might create a function using these features. 
 
 ## Further Reading
 
-- [node-persist](https://github.com/simonlast/node-persist)
+- Github: [node-persist](https://github.com/simonlast/node-persist)

@@ -4,7 +4,7 @@ title: 'Creating a VSCode extension'
 tags: [VSCode, extension, terminal]
 ---
 
-Get up and running in minutes creating your own VSCode extension with these tools and examples.
+Get up and running in minutes with this concise guide.
 
 ## Generating Project Files
 
@@ -52,5 +52,6 @@ This command updates your extension on the VSCode Marketplace, increments the ve
 
 ## Further Reading
 
-- [Microsoft - Your First Extension](https://code.visualstudio.com/api/get-started/your-first-extension)
-- [Microsoft - Publishing Extensions](https://code.visualstudio.com/api/working-with-extensions/publishing-extension)
+- Microsoft: [Your First Extension](https://code.visualstudio.com/api/get-started/your-first-extension)
+- Microsoft: [Publishing Extensions](https://code.visualstudio.com/api/working-with-extensions/publishing-extension)
+- My extension: [Terminal Zoom](https://github.com/trybick/vscode-terminal-zoom/)

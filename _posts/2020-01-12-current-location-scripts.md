@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'How to get your current city using Bash or Node.js'
+title: 'How to find your current city using Bash or Node.js'
 tags: [save, persist, file, node.js, script]
 ---
 
@@ -35,5 +35,5 @@ We're using [request-promise](https://github.com/request/request-promise) to mak
 ## Further Reading
 
 - [IPinfo](https://ipinfodb.com/)
-- [jq](https://github.com/stedolan/jq)
-- [request-promise](https://github.com/request/request-promise)
+- GitHub: [jq](https://github.com/stedolan/jq)
+- GitHub: [request-promise](https://github.com/request/request-promise)
