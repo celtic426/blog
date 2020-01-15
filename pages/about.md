@@ -7,12 +7,14 @@ tags: [About, Archive]
 ---
 
 <p style="text-align: center">
-Hi! I'm a software developer and musician from Boston, MA and this is my dog Izzy. <br>
+Hi! I'm a software developer and musician from Boston, MA and this is my cat Hercules. <br>
 To see my current projects visit <a href="https://timr.dev/" target="_blank">timr.dev</a>
 </p>
 
 <div style="text-align: center">
-  <img width="55%" src="https://i.imgur.com/Ltp5Qle.jpg">
+  <!-- TWo different piano pictures -->
+  <!-- <img width="80%" src="https://imgur.com/Zdda55J.jpg"> -->
+  <img width="80%" src="https://imgur.com/YDg045N.jpg">
 </div>
 
 {% include subscription-form.html %}
