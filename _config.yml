@@ -2,7 +2,8 @@
 baseurl: '/blog'
 url: 'https://timr.dev'
 title: 'timr Blog' # title in tab
-description: 'Web Developer Tech Blog' # used by search engines
+description: 'Web Developer Tech Blog' # used by search engines\
+future: true
 
 # THEME-SPECIFIC CONFIGURATION
 theme_settings:
