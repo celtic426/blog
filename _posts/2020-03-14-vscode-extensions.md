@@ -56,7 +56,7 @@ VSCode is the most popular code editor currently, thanks in part to its Marketpl
 
 - [MDX](https://marketplace.visualstudio.com/items?itemName=silvenon.mdx) - Color theming for mdx files
 
-## 🎂 MVPs 🎂
+## MVPs 🎂
 
 - [Settings Sync](https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync) - Sync your settings, keyboard shortcuts, extensions and more to your GitHub account. Next time you setup a new computer, this is the only thing you have to worry about.
 
