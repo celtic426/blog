@@ -4,7 +4,7 @@ title: 'VSCode Extensions for JavaScript Developers'
 tags: [VSCode, Extensions, Productivity]
 ---
 
-VSCode is the most popular code editor currently, thanks in part to its Marketplace for extensions. Most of the following list are universally applicable, with some specifically targeting Front End web development.
+VSCode is the most popular code editor currently, thanks in part to its Marketplace for extensions. Most of the following list is universally applicable, with some specifically targeting Front End web development.
 
 ## Basics
 
@@ -58,9 +58,10 @@ VSCode is the most popular code editor currently, thanks in part to its Marketpl
 
 ## MVPs 🎂
 
-- [Activitus Bar](https://marketplace.visualstudio.com/items?itemName=Gruntfuggly.activitusbar) - Moves the sidebar (usually on the left) to the bottom status bar (see picture). More space!
+- [Settings Sync](https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync) - Sync your settings, keyboard shortcuts, extensions and more to your GitHub account. Next time you setup a new computer, this is the only thing you have to worry about.
 
-<img src="https://i.imgur.com/KUU4IN6.png" alt="Activitus Bar example" style="padding-left: 20px"/>
+- [Activitus Bar](https://marketplace.visualstudio.com/items?itemName=Gruntfuggly.activitusbar) - Moves the sidebar (usually on the left) to the bottom status bar (see picture). More space!
+<img src="https://i.imgur.com/KUU4IN6.png" alt="Activitus Bar example" style="padding-left: 20px; padding-bottom: -10px"/>
 
 - [Wrap Console Log](https://marketplace.visualstudio.com/items?itemName=midnightsyntax.vscode-wrap-console-log) - Insert console log statements for highlighted text using a keyboard shortcut. You may want to add a keyboard shortcut like this:
 
@@ -72,12 +73,12 @@ VSCode is the most popular code editor currently, thanks in part to its Marketpl
 }
 ```
 
-- [Settings Sync](https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync) - Sync your settings, keyboard shortcuts, extensions and more to your GitHub account. Next time you setup a new computer, this is the only thing you have to worry about.
-
 ## Tips
-
-- Right-click the status bar and uncheck things you don't want to see - [View demo](https://code.visualstudio.com/updates/v1_36#_hide-individual-status-bar-items)
 
 - Install 'code' command in PATH - [Microsoft](https://code.visualstudio.com/docs/setup/mac#_launching-from-the-command-line)
 
-- Enormous guide with solid tips - [Microsoft](https://code.visualstudio.com/docs/getstarted/tips-and-tricks)
+- Enable format-on-save with the setting `"editor.formatOnSave": true,`
+
+- Remove clutter with the right-click menu on the status bar - [View demo](https://code.visualstudio.com/updates/v1_36#_hide-individual-status-bar-items)
+
+- Enormous guide with more - [Microsoft](https://code.visualstudio.com/docs/getstarted/tips-and-tricks)
